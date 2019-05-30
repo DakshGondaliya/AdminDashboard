@@ -1,12 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 import { AppComponent } from './app.component';
 import { AppheaderComponent } from './components/appheader/appheader.component';
 import { AppfooterComponent } from './components/appfooter/appfooter.component';
-import { AppmenuComponent } from './components/appmenu/appmenu.component';
-import { AppsettingComponent } from './components/appsetting/appsetting.component';
+import { AppmenuComponent } from './components/appmenu/appmenu.component';  
+import { PlanComponent } from './plan/plan.component';
+import { DietitianComponent } from './dietitian/dietitian.component';
+import { PackageComponent } from './package/package.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,15 @@ import { AppsettingComponent } from './components/appsetting/appsetting.componen
     AppheaderComponent,
     AppfooterComponent,
     AppmenuComponent,
-    AppsettingComponent
+    PlanComponent,
+    DietitianComponent,
+    PackageComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

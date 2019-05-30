@@ -28,34 +28,34 @@
       <li class="header">MAIN NAVIGATION</li>
       <li class="active treeview menu-open">
         <a href="#">
-          <i class="fa fa-dashboard"></i> <span>Master</span>
+          <i class="fa fa-cutlery"></i> <span>Master</span>
           <span class="pull-right-container">
             <i class="fa fa-angle-left pull-right"></i>
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="index.html"><i class="fa fa-circle-o"></i> Plan</a></li>
-          <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dietitian</a></li>
-          <li><a href="index2.html"><i class="fa fa-circle-o"></i> Recipe Type</a></li>
-          <li><a href="index2.html"><i class="fa fa-circle-o"></i> Package</a></li>
-          <li><a href="index2.html"><i class="fa fa-circle-o"></i> Group</a></li>
-          <li><a href="index2.html"><i class="fa fa-circle-o"></i> Unit of Measurement</a></li>
-          <li><a href="index2.html"><i class="fa fa-circle-o"></i> Customer Sign-up</a></li>
+          <li><a [routerLink]="['/plan']" routerLinkActive="active" ><i class="fa fa-circle-o"></i> Plan</a></li>
+          <li><a routerLink='/dietitian' routerLinkActive="active" ><i class="fa fa-circle-o"></i> Dietitian</a></li>
+          <li><a routerLink="/plan" routerLinkActive="active"><i class="fa fa-circle-o"></i> Recipe Type</a></li>
+          <li><a routerLink="/package" routerLinkActive="active"><i class="fa fa-circle-o"></i> Package</a></li>
+          <li><a routerLink="/package" routerLinkActive="active"><i class="fa fa-circle-o"></i> Group</a></li>
+          <li><a routerLink="/package" routerLinkActive="active"><i class="fa fa-circle-o"></i> Unit of Measurement</a></li>
+          <li><a routerLink="/package" routerLinkActive="active"><i class="fa fa-circle-o"></i> Customer Sign-up</a></li>
         </ul>
       </li>
       
       <li>
-        <a href="pages/widgets.html">
-          <i class="fa fa-th"></i> <span>Recipe</span>
+        <a routerLink="/package" routerLinkActive="active">
+          <i class="fa fa-cutlery"></i> <span>Recipe</span>
         </a>
       </li>
       <li>
-        <a href="pages/widgets.html">
+        <a routerLink="/package" routerLinkActive="active">
           <i class="fa fa-th"></i> <span>Ingredient</span>
         </a>
       </li>
       <li class="treeview">
-        <a href="#">
+        <a routerLink="/package" routerLinkActive="active">
           <i class="fa fa-pie-chart"></i>
           <span>Customer</span>
           <span class="pull-right-container">
@@ -63,13 +63,13 @@
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> Customer Import</a></li>
-          <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Customer List</a></li>
-          <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Customer Package</a></li>
+          <li><a routerLink="/package" routerLinkActive="active"><i class="fa fa-circle-o"></i> Customer Import</a></li>
+          <li><a routerLink="/package" routerLinkActive="active"><i class="fa fa-circle-o"></i> Customer List</a></li>
+          <li><a routerLink="/package" routerLinkActive="active"><i class="fa fa-circle-o"></i> Customer Package</a></li>
         </ul>
       </li>
       <li>
-        <a href="pages/widgets.html">
+        <a routerLink="/package" routerLinkActive="active">
           <i class="fa fa-th"></i> <span>Admin-diet</span>
         </a>
       </li>
@@ -82,7 +82,7 @@
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> Recipe Unit Wise</a></li>
+          <li><a routerLink="/package" routerLinkActive="active"><i class="fa fa-circle-o"></i> Recipe Unit Wise</a></li>
         </ul>
       </li>
       
