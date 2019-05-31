@@ -10,6 +10,10 @@ import { AppmenuComponent } from './components/appmenu/appmenu.component';
 import { PlanComponent } from './plan/plan.component';
 import { DietitianComponent } from './dietitian/dietitian.component';
 import { PackageComponent } from './package/package.component';
+import { GroupComponent } from './group/group.component';
+import { RecipetypeComponent } from './recipetype/recipetype.component';
+import { UnitofmeasurementComponent } from './unitofmeasurement/unitofmeasurement.component';
+import { CustomerSignupComponent } from './customer-signup/customer-signup.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +24,10 @@ import { PackageComponent } from './package/package.component';
     PlanComponent,
     DietitianComponent,
     PackageComponent,
+    GroupComponent,
+    RecipetypeComponent,
+    UnitofmeasurementComponent,
+    CustomerSignupComponent,
     
   ],
   imports: [
