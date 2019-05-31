@@ -8,7 +8,7 @@ import { DietitianComponent } from '../dietitian/dietitian.component';
 import { PackageComponent } from '../package/package.component';
 
 export const routes: Routes = [
-    {path: '/plan', component: PlanComponent},
+    {path: 'plan', component: PlanComponent},
     {path: 'dietitian', component: DietitianComponent},
     {path: 'package', component: PackageComponent},
     {path: '', redirectTo:'/plan', pathMatch: 'full'}
