@@ -13,7 +13,7 @@ export class CustomerSignupComponent implements OnInit {
   feedbackForm: FormGroup;
   feedback: Feedback;
   genderType = Gender;
-  activity = Activity;
+  activityType = Activity;
   dietryHabits = Dietryhabits;
 
 

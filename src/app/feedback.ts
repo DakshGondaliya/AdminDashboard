@@ -12,5 +12,5 @@ export class Feedback {
 }
 
 export const Gender = ['male','female'];
-export const Activity = ['male','female'];
-export const Dietryhabits = ['male','female'];
+export const Activity = ['male','female','vegan'];
+export const Dietryhabits = ['male','female','veg'];
