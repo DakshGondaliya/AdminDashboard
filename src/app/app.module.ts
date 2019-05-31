@@ -20,6 +20,7 @@ import { CustomerSignupComponent } from './customer-signup/customer-signup.compo
 import { RecipeComponent } from './recipe/recipe.component';
 import { IngredientComponent } from './ingredient/ingredient.component';
 import { AdminDietComponent } from './admin-diet/admin-diet.component';
+import { CustomerImportComponent } from './customer-import/customer-import.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { AdminDietComponent } from './admin-diet/admin-diet.component';
     RecipeComponent,
     IngredientComponent,
     AdminDietComponent,
+    CustomerImportComponent,
     
   ],
   imports: [

@@ -11,7 +11,8 @@ import { CustomerSignupComponent } from '../customer-signup/customer-signup.comp
 import { RecipetypeComponent } from '../recipetype/recipetype.component';
 import { UnitofmeasurementComponent } from '../unitofmeasurement/unitofmeasurement.component';
 import { RecipeComponent } from '../recipe/recipe.component';
-import { IngredientComponent } from '../ingredient/ingredient.component'
+import { IngredientComponent } from '../ingredient/ingredient.component';
+import { CustomerImportComponent } from '../customer-import/customer-import.component';
 
 export const routes: Routes = [
     {path: 'plan', component: PlanComponent},
@@ -23,5 +24,6 @@ export const routes: Routes = [
     {path: 'uom', component: UnitofmeasurementComponent},
     {path: 'recipe', component: RecipeComponent},
     {path: 'ingredient', component: IngredientComponent},
+    {path: 'customerimport' , component: CustomerImportComponent},
     {path: '', redirectTo:'/plan', pathMatch: 'full'}
 ];  
