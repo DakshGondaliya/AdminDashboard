@@ -1,7 +1,7 @@
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <section class="content-header">
-    <h1>
+    <h1 id="customer">
       Customer
     </h1>
     <ol class="breadcrumb">
@@ -13,74 +13,76 @@
 
   <!-- Main content -->
   <section class="content">
-    <form novalidate [formGroup]="feedbackForm" (ngSubmit)="onSubmit()" class="form-group">
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="Customer">Customer Name</label>
-          <input formControlName="customer" type="text" class="form-control" id="cust" placeholder="Name">
+    <div class="box">
+      <form novalidate [formGroup]="feedbackForm" (ngSubmit)="onSubmit()" class="form-group">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="Customer">Customer Name</label>
+            <input formControlName="customer" type="text" class="form-control" id="cust" placeholder="Name">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="Email">Email</label>
+            <input formControlName="email" type="text" class="form-control" id="email" placeholder="Email">
+          </div>
         </div>
-        <div class="form-group col-md-6">
-          <label for="Email">Email</label>
-          <input formControlName="email" type="text" class="form-control" id="email" placeholder="Email">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="ContactNo">Contact No</label>
+            <input formControlName="contactno" type="text" class="form-control" id="cno" placeholder="">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="City">City</label>
+            <input formControlName="city" type="text" class="form-control" id="city" placeholder="">
+          </div>
         </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="ContactNo">Contact No</label>
-          <input formControlName="contactno" type="text" class="form-control" id="cno" placeholder="">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="BirthDate">Birth Date</label>
+            <input formControlName="birthdate" type="text" class="form-control" id="birthdate" placeholder="">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="Gender">Gender</label>
+            <select id="inputState" class="form-control" formControlName="gender">
+              <option selected></option>
+              <option *ngFor="let gtype of genderType" [value]="gtype">
+                {{ gtype }}
+              </option>
+            </select>
+          </div>
         </div>
-        <div class="form-group col-md-6">
-          <label for="City">City</label>
-          <input formControlName="city" type="text" class="form-control" id="city" placeholder="">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="height">Height</label>
+            <input formControlName="height" type="text" class="form-control" id="height" placeholder="">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="weight">Weight</label>
+            <input formControlName="weight" type="text" class="form-control" id="weight" placeholder="">
+          </div>
         </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="BirthDate">Birth Date</label>
-          <input formControlName="birthdate" type="text" class="form-control" id="birthdate" placeholder="">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="Activity">Activity</label>
+            <select id="activity" class="form-control" formControlName="activity">
+              <option selected></option>
+              <option *ngFor="let atype of activityType" [value]="atype">
+                {{ atype }}
+              </option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="Dietryhabits">Dietry Habits</label>
+            <select id="Dietryhabits" class="form-control" formControlName="dietryhabits">
+              <option selected></option>
+              <option *ngFor="let dtype of dietryHabits" [value]="dtype">
+                {{ dtype }}
+              </option>
+            </select>
+          </div>
         </div>
-        <div class="form-group col-md-6">
-          <label for="Gender">Gender</label>
-          <select id="inputState" class="form-control" formControlName="gender">
-            <option selected></option>
-            <option *ngFor="let gtype of genderType" [value]="gtype">
-              {{ gtype }}
-            </option>
-          </select>
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="height">Height</label>
-          <input formControlName="height" type="text" class="form-control" id="height" placeholder="">
-        </div>
-        <div class="form-group col-md-6">
-          <label for="weight">Weight</label>
-          <input formControlName="weight" type="text" class="form-control" id="weight" placeholder="">
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="Activity">Activity</label>
-          <select id="activity" class="form-control" formControlName="activity">
-            <option selected></option>
-            <option *ngFor="let atype of activityType" [value]="atype">
-              {{ atype }}
-            </option>
-          </select>
-        </div>
-        <div class="form-group col-md-6">
-          <label for="Dietryhabits">Dietry Habits</label>
-          <select id="Dietryhabits" class="form-control" formControlName="dietryhabits">
-            <option selected></option>
-            <option *ngFor="let dtype of dietryHabits" [value]="dtype">
-              {{ dtype }}
-            </option>
-          </select>
-        </div>
-      </div>
-      <button type="submit" class="btn btn-primary">Save</button>
-      <button type="button" class="btn btn-light">Cancel</button>
-    </form>
+        <button type="submit" class="btn btn-primary btn-1">Save</button>
+        <button type="button" class="btn btn-light btn-1">Cancel</button>
+      </form>
+    </div>
   </section>
 </div>
