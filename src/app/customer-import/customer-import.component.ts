@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { CustomerImport, Selectpackage, Gender } from '../customerimport';
 
 @Component({
   selector: 'app-customer-import',
@@ -7,9 +9,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerImportComponent implements OnInit {
 
-  constructor() { }
+  importForm: FormGroup;
+  cimport: CustomerImport;
+  selectPackage = Selectpackage;
+  genderType = Gender;
+
+  constructor(private ci: FormBuilder) {
+    this.createImportForm();
+  }
 
   ngOnInit() {
+  }
+
+  createImportForm() {
+    this.importForm = this.ci.group({
+      individual: false,
+      selectpackage: '',
+      name: '',
+      email: '',
+      mobileno: 0,
+      gender: ''
+    });
+  }
+
+  onSubmit() {
+    this.cimport = this.importForm.value;
+    console.log(this.cimport);
+    this.importForm.reset();  
   }
 
 }
