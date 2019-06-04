@@ -15,14 +15,14 @@
   <!-- Main content -->
   <section class="content">
     <div class="box">
-      <form novalidate [formGroup]="importForm" (ngSubmit)="onSubmit()" class="form-group">
+      <form novalidate [formGroup]="clistForm" (ngSubmit)="onSubmit()" class="form-group">
         <div class="form-row">
           <div class="form-group col-md-6">
-            <label for="selectpackage">Customer Type</label>
-            <select id="selectpackage" class="form-control" formControlName="selectpackage">
+            <label for="ctype">Customer Type</label>
+            <select id="selectpackage" class="form-control" formControlName="ctype">
               <option selected></option>
-              <option *ngFor="let stype of selectPackage" [value]="stype">
-                {{ stype }}
+              <option *ngFor="let ctype of cType" [value]="ctype">
+                {{ ctype }}
               </option>
             </select>
           </div>
