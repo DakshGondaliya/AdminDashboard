@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Plan } from './plan';
+
 
 @Component({
   selector: 'app-plan',
@@ -7,9 +10,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlanComponent implements OnInit {
 
-  constructor() { }
+  planForm: FormGroup;
+  plan: Plan;
+
+  constructor(private pf: FormBuilder) {
+    this.createForm();
+  }
 
   ngOnInit() {
+  }
+
+  createForm() {
+    this.planForm = this.pf.group({
+      name: '',
+      code: '',
+      description: '',
+      isCustomPlan: false,
+      isDefault: false
+    });
+  }
+
+  onSubmit() {
+    this.plan = this.planForm.value;
+    console.log(this.plan);
+    this.planForm.reset();
   }
 
 }

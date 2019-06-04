@@ -1,0 +1,53 @@
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <h1>
+      Customer List
+      <small>List</small>
+    </h1>
+    <ol class="breadcrumb">
+      <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+      <li class="active">Customer</li>
+      <li class="active">List</li>
+    </ol>
+  </section>
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="box">
+      <form novalidate [formGroup]="importForm" (ngSubmit)="onSubmit()" class="form-group">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="selectpackage">Customer Type</label>
+            <select id="selectpackage" class="form-control" formControlName="selectpackage">
+              <option selected></option>
+              <option *ngFor="let stype of selectPackage" [value]="stype">
+                {{ stype }}
+              </option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-1">Save</button>
+        <button type="button" class="btn btn-light btn-1">Cancel</button>
+        <button type="button" class="btn btn-info btn-1">Export Excel</button>
+      </form>
+      <table class="table table-striped ttable-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Code</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Contact No</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Active</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+          
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>
