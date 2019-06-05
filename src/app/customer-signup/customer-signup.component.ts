@@ -27,16 +27,17 @@ export class CustomerSignupComponent implements OnInit {
 
   createForm(){
     this.feedbackForm = this.fb.group({
-      customer: '',
-      email: '',
-      contactno: '',
+      customer_code: '',
+      customer_name: '',
+      customer_email: '',
+      customer_contactno: '',
       city: '',
-      birthdate: '',
+      birth_date: '',
       gender: '',
       height: '',
       weight: '',
       activity: '',
-      dietryhabits: ''
+      dietry_habits: ''
     });
   }
 

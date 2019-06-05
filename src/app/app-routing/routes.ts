@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
+import { PlanListComponent } from '../plan-list/plan-list.component';
 import { PlanComponent } from '../plan/plan.component';
 import { DietitianComponent } from '../dietitian/dietitian.component';
 import { PackageComponent } from '../package/package.component';
@@ -16,6 +17,7 @@ import { CustomerImportComponent } from '../customer-import/customer-import.comp
 import { CustomerListComponent } from '../customer-list/customer-list.component';
 
 export const routes: Routes = [
+    {path: 'plan-list', component: PlanListComponent },
     {path: 'plan', component: PlanComponent},
     {path: 'dietitian', component: DietitianComponent},
     {path: 'package', component: PackageComponent},

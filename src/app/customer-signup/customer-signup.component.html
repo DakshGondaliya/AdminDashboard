@@ -18,17 +18,17 @@
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="Customer">Customer Name</label>
-            <input formControlName="customer" type="text" class="form-control" id="cust" placeholder="Name">
+            <input formControlName="customer_name" type="text" class="form-control" id="cust" placeholder="">
           </div>
           <div class="form-group col-md-6">
             <label for="Email">Email</label>
-            <input formControlName="email" type="text" class="form-control" id="email" placeholder="Email">
+            <input formControlName="customer_email" type="text" class="form-control" id="email" placeholder="example@eg.com">
           </div>
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="ContactNo">Contact No</label>
-            <input formControlName="contactno" type="text" class="form-control" id="cno" placeholder="">
+            <input formControlName="customer_contactno" type="text" class="form-control" id="cno" placeholder="">
           </div>
           <div class="form-group col-md-6">
             <label for="City">City</label>
@@ -38,7 +38,7 @@
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="BirthDate">Birth Date</label>
-            <input formControlName="birthdate" type="text" class="form-control" id="birthdate" placeholder="">
+            <input formControlName="birth_date" type="text" class="form-control" id="birthdate" placeholder="">
           </div>
           <div class="form-group col-md-6">
             <label for="Gender">Gender</label>
@@ -72,12 +72,16 @@
           </div>
           <div class="form-group col-md-6">
             <label for="Dietryhabits">Dietry Habits</label>
-            <select id="Dietryhabits" class="form-control" formControlName="dietryhabits">
+            <select id="Dietryhabits" class="form-control" formControlName="dietry_habits">
               <option selected></option>
               <option *ngFor="let dtype of dietryHabits" [value]="dtype">
                 {{ dtype }}
               </option>
             </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="Customer">Customer Code</label>
+            <input formControlName="customer_code" type="text" class="form-control" id="cust" placeholder="">
           </div>
         </div>
         <button type="submit" class="btn btn-primary btn-1">Save</button>
