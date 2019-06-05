@@ -24,6 +24,7 @@ import { CustomerImportComponent } from './customer-import/customer-import.compo
 import { CustomerListComponent } from './customer-list/customer-list.component';
 import { PlanListComponent } from './plan-list/plan-list.component';
 import { AddDietitianComponent } from './add-dietitian/add-dietitian.component';
+import { AddUomComponent } from './add-uom/add-uom.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { AddDietitianComponent } from './add-dietitian/add-dietitian.component';
     CustomerListComponent,
     PlanListComponent,
     AddDietitianComponent,
+    AddUomComponent,
     
   ],
   imports: [

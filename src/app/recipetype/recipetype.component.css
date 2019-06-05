@@ -1,0 +1,16 @@
+.form-group {
+    background-color: #fff;
+}
+
+#customer{
+    margin-left: 0.7em; 
+}
+
+.box{
+   box-shadow: 0 0 8rem rgba(0,0,0,0.2);
+   padding: 1em 0;
+}
+
+.btn-1 {
+    margin-left: 1.05em;
+}

@@ -12,6 +12,7 @@ import { GroupComponent } from '../group/group.component';
 import { CustomerSignupComponent } from '../customer-signup/customer-signup.component';
 import { RecipetypeComponent } from '../recipetype/recipetype.component';
 import { UnitofmeasurementComponent } from '../unitofmeasurement/unitofmeasurement.component';
+import { AddUomComponent } from '../add-uom/add-uom.component';
 import { RecipeComponent } from '../recipe/recipe.component';
 import { IngredientComponent } from '../ingredient/ingredient.component';
 import { CustomerImportComponent } from '../customer-import/customer-import.component';
@@ -27,6 +28,7 @@ export const routes: Routes = [
     {path: 'customersignup', component: CustomerSignupComponent},
     {path: 'recipetype', component: RecipetypeComponent},
     {path: 'uom', component: UnitofmeasurementComponent},
+    {path: 'add-uom', component: AddUomComponent},
     {path: 'recipe', component: RecipeComponent},
     {path: 'ingredient', component: IngredientComponent},
     {path: 'customerimport' , component: CustomerImportComponent},
