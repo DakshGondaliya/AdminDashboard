@@ -23,6 +23,7 @@ import { AdminDietComponent } from './admin-diet/admin-diet.component';
 import { CustomerImportComponent } from './customer-import/customer-import.component';
 import { CustomerListComponent } from './customer-list/customer-list.component';
 import { PlanListComponent } from './plan-list/plan-list.component';
+import { AddDietitianComponent } from './add-dietitian/add-dietitian.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { PlanListComponent } from './plan-list/plan-list.component';
     CustomerImportComponent,
     CustomerListComponent,
     PlanListComponent,
+    AddDietitianComponent,
     
   ],
   imports: [

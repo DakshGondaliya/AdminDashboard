@@ -1,0 +1,76 @@
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <h1 id="customer">
+      Dietitian
+    </h1>
+    <ol class="breadcrumb">
+      <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+      <li class="active">Dietitian</li>
+      <li class="active">add</li>
+    </ol>
+  </section>
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="box">
+      <form novalidate [formGroup]="dietitianForm" (ngSubmit)="onSubmit()" class="form-group">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="Dietitian">Name</label>
+            <input formControlName="dietitian_name" type="text" class="form-control" id="name" placeholder="">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="Email">Qualification</label>
+            <input formControlName="qualification" type="text" class="form-control" id="" placeholder="">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="Email">Email</label>
+            <input formControlName="dietitian_email" type="text" class="form-control" id="email" placeholder="">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="ContactNo">Contact No</label>
+            <input formControlName="dietitian_contactno" type="text" class="form-control" id="cno" placeholder="">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="file">Uplode Photo</label>
+            <input formControlName="upload_photo" type="file" class="form-control-file" id="photo">
+          </div>
+          <div class="form-group col-md-6">
+            
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="address1">Address 1</label>
+            <input formControlName="address1" type="text" class="form-control" id="add1" placeholder="">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="address2">Address 2</label>
+            <input formControlName="address2" type="text" class="form-control" id="add2" placeholder="">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="state">State</label>
+            <input formControlName="state" type="text" class="form-control" id="state" placeholder="">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="City">City</label>
+            <input formControlName="city" type="text" class="form-control" id="city" placeholder="">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="dietitian_code">Dietitian Code</label>
+            <input formControlName="dietitian_code" type="text" class="form-control" id="cust" placeholder="">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-1">Save</button>
+        <button type="button" class="btn btn-light btn-1">Cancel</button>
+      </form>
+    </div>
+  </section>
+</div>

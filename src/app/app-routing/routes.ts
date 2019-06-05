@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { PlanListComponent } from '../plan-list/plan-list.component';
 import { PlanComponent } from '../plan/plan.component';
 import { DietitianComponent } from '../dietitian/dietitian.component';
+import { AddDietitianComponent } from '../add-dietitian/add-dietitian.component';
 import { PackageComponent } from '../package/package.component';
 import { GroupComponent } from '../group/group.component';
 import { CustomerSignupComponent } from '../customer-signup/customer-signup.component';
@@ -20,6 +21,7 @@ export const routes: Routes = [
     {path: 'plan-list', component: PlanListComponent },
     {path: 'plan', component: PlanComponent},
     {path: 'dietitian', component: DietitianComponent},
+    {path: 'add-dietitian', component: AddDietitianComponent},
     {path: 'package', component: PackageComponent},
     {path: 'group', component: GroupComponent},
     {path: 'customersignup', component: CustomerSignupComponent},

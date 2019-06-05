@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Feedback, Gender, Activity, Dietryhabits } from '../feedback';
-import { GenericBrowserDomAdapter } from '@angular/platform-browser/src/browser/generic_browser_adapter';
 
 @Component({
   selector: 'app-customer-signup',
