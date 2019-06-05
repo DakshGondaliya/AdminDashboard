@@ -1,3 +1,7 @@
+.btn-1 {
+    margin-left: 1.05em;
+}
+
 .form-group {
     background-color: #fff;
 }
@@ -11,6 +15,11 @@
    padding: 1em 0;
 }
 
-.btn-1 {
+.list{
+    margin-top: 3em;
     margin-left: 1.05em;
+}
+
+.search{
+    margin-left: 40em;
 }
