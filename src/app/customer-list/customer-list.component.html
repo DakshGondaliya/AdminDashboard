@@ -17,8 +17,10 @@
     <div class="box">
       <form novalidate [formGroup]="clistForm" (ngSubmit)="onSubmit()" class="form-group">
         <div class="form-row">
-          <div class="form-group col-md-6">
+          <div class="form-group col-md-2">
             <label for="ctype">Customer Type</label>
+          </div>
+          <div class="col-md-2">
             <select id="selectpackage" class="form-control" formControlName="ctype">
               <option selected></option>
               <option *ngFor="let ctype of cType" [value]="ctype">
@@ -27,27 +29,34 @@
             </select>
           </div>
         </div>
-        <button type="submit" class="btn btn-primary btn-1">Save</button>
-        <button type="button" class="btn btn-light btn-1">Cancel</button>
-        <button type="button" class="btn btn-info btn-1">Export Excel</button>
+
+        <div class="col-md-4">
+          <button type="submit" class="btn btn-primary btn-1">Save</button>
+          <button type="button" class="btn btn-light btn-1">Cancel</button>
+          <button type="button" class="btn btn-info btn-1">Export Excel</button>
+        </div>
       </form>
-      <table class="table table-striped ttable-bordered">
-        <thead>
+      <div class="col-md-2 s-btn">
+        <label>Search:</label>
+        <input type="search" class="form-control input-sm" placeholder="">
+      </div>
+      <table id="example2" class="table table-bordered table-hover">
+          <thead>
           <tr>
-            <th scope="col">Code</th>
-            <th scope="col">Name</th>
-            <th scope="col">Email</th>
-            <th scope="col">Contact No</th>
-            <th scope="col">Gender</th>
-            <th scope="col">Active</th>
-            <th scope="col">Action</th>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Contact No</th>
+            <th>Gender</th>
+            <th>Active</th>
+            <th>Action</th>
           </tr>
-        </thead>
-        
-        <tbody>
+          </thead>
+          <tbody>
+
+          </tbody>
           
-        </tbody>
-      </table>
+        </table>
     </div>
   </section>
 </div>
