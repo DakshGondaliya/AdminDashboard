@@ -25,6 +25,7 @@ import { CustomerListComponent } from './customer-list/customer-list.component';
 import { PlanListComponent } from './plan-list/plan-list.component';
 import { AddDietitianComponent } from './add-dietitian/add-dietitian.component';
 import { AddUomComponent } from './add-uom/add-uom.component';
+import { RecipeUnitComponent } from './recipe-unit/recipe-unit.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { AddUomComponent } from './add-uom/add-uom.component';
     PlanListComponent,
     AddDietitianComponent,
     AddUomComponent,
+    RecipeUnitComponent,
     
   ],
   imports: [

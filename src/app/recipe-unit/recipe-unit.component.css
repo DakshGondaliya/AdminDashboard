@@ -1,0 +1,20 @@
+.box{
+    box-shadow: 0 0 8rem rgba(0,0,0,0.2);
+    padding: 1em 0;
+ }
+
+.s-btn{
+    display: inline-flex;
+    margin-top: -0.7em;
+    right: 0;
+    margin-right: 0;
+}
+
+.s-btn label{
+    margin-right: 1em;
+}
+
+.s-btn input{
+    height: 23px;
+    width:200px;
+}
