@@ -17,6 +17,7 @@ import { RecipeComponent } from '../recipe/recipe.component';
 import { IngredientComponent } from '../ingredient/ingredient.component';
 import { CustomerImportComponent } from '../customer-import/customer-import.component';
 import { CustomerListComponent } from '../customer-list/customer-list.component';
+import { AdminDietComponent } from '../admin-diet/admin-diet.component';
 
 export const routes: Routes = [
     {path: 'plan-list', component: PlanListComponent },
@@ -33,5 +34,6 @@ export const routes: Routes = [
     {path: 'ingredient', component: IngredientComponent},
     {path: 'customerimport' , component: CustomerImportComponent},
     {path: 'customerlist', component: CustomerListComponent},
+    {path: 'admin-diet', component: AdminDietComponent},
     {path: '', redirectTo:'/plan', pathMatch: 'full'}
 ];  
