@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Plan } from './plan';
+import { PlanService } from './plan.service';
 
 
 @Component({
@@ -13,7 +14,9 @@ export class PlanComponent implements OnInit {
   planForm: FormGroup;
   plan: Plan;
 
-  constructor(private pf: FormBuilder) {
+  posts: Plan[];
+  
+  constructor(private pf: FormBuilder, private planService: PlanService) {
     this.createForm();
   }
 
@@ -34,6 +37,9 @@ export class PlanComponent implements OnInit {
     this.plan = this.planForm.value;
     console.log(this.plan);
     this.planForm.reset();
+    this.planService.createPost(this.plan).subscribe(
+      data => this.posts.push(data)
+    );
   }
 
 }
