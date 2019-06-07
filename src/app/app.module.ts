@@ -33,6 +33,7 @@ import { RecipeUnitComponent } from './recipe-unit/recipe-unit.component';
 
 import {SignupServiceService} from './customer-signup/signup-service.service';
 import {CustomerService} from './customer-list/customer.service';
+import { AddPackageComponent } from './add-package/add-package.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import {CustomerService} from './customer-list/customer.service';
     AddDietitianComponent,
     AddUomComponent,
     RecipeUnitComponent,
+    AddPackageComponent,
     
   ],
   imports: [

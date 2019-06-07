@@ -1,0 +1,76 @@
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <h1 id="customer">
+      Package
+    </h1>
+    <ol class="breadcrumb">
+      <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+      <li class="active">Package</li>
+      <li class="active">Create</li>
+    </ol>
+  </section>
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="box">
+      <form novalidate [formGroup]="packageForm" (ngSubmit)="onSubmit()" class="form-group">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="Name">Name</label>
+            <input formControlName="package_name" type="text" class="form-control" id="cust" placeholder="">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="Code">Code</label>
+            <input formControlName="package_code" type="text" class="form-control" id="code"
+              placeholder="example@eg.com">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="Plan">Plan</label>
+            <select id="inputState" class="form-control" formControlName="plan_name">
+              <option selected></option>
+              <option *ngFor="let gtype of genderType" [value]="gtype">
+                {{ gtype }}
+              </option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="Gender">Dietitian</label>
+            <select id="inputState" class="form-control" formControlName="dietician_name">
+              <option selected></option>
+              <option *ngFor="let gtype of genderType" [value]="gtype">
+                {{ gtype }}
+              </option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="Gender">Duration</label>
+            <select id="inputState" class="form-control" formControlName="duration">
+              <option selected></option>
+              <option *ngFor="let gtype of genderType" [value]="gtype">
+                {{ gtype }}
+              </option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label class="form-check-label">
+              <input formControlName="isGroupPackage" type="checkbox" class="form-check-input" value="">Is Custom Plan
+            </label>
+          </div>
+        </div>
+
+        <div class="des">
+          <label for="comment">Description</label>
+          <textarea formControlName="description" class="form-control" rows="5" id="comment"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-1">Save</button>
+
+      </form>
+    </div>
+  </section>
+</div>

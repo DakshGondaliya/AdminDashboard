@@ -23,14 +23,23 @@
         <thead>
           <tr>
             <th scope="col">Name</th>
-            <th scope="col">Qualification</th>
-            <th scope="col">Email</th>
-            <th scope="col">Contactno</th>
+            <th scope="col">Code</th>
+            <th scope="col">Description</th>
+            <th scope="col">IsDefault</th>
+            <th scope="col">IsCustomPlan</th>
             <th scope="col">Active</th>
             <th scope="col">Action</th>
           </tr>
         </thead>
         <tbody>
+          <tr *ngFor = "let p of plan">
+            <td>{{ p.plan_name }}</td>
+            <td>{{ p.plan_code }}</td>
+            <td>{{ p.description }}</td>
+            <td>{{ p.isDefault }}</td>
+            <td>{{ p.isCustomPlan }}</td>
+            <td></td>
+          </tr>
 
         </tbody>
       </table>

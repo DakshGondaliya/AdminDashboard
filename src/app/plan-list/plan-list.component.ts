@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
+import { PlanlistService } from './planlist.service';
+import { HttpClient } from '@angular/common/http';
+import { Plist} from './plist';
 
 @Component({
   selector: 'app-plan-list',
@@ -8,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlanListComponent implements OnInit {
 
-  constructor() { }
+  plan: Plist[];
+
+  constructor( private planService: PlanlistService) { }
 
   ngOnInit() {
+    this.planService.getData().subscribe((data: Plist[]) => {
+      this.plan = data;
+    });
   }
 
 }

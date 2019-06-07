@@ -8,6 +8,7 @@ import { PlanComponent } from '../plan/plan.component';
 import { DietitianComponent } from '../dietitian/dietitian.component';
 import { AddDietitianComponent } from '../add-dietitian/add-dietitian.component';
 import { PackageComponent } from '../package/package.component';
+import { AddPackageComponent } from '../add-package/add-package.component';
 import { GroupComponent } from '../group/group.component';
 import { CustomerSignupComponent } from '../customer-signup/customer-signup.component';
 import { RecipetypeComponent } from '../recipetype/recipetype.component';
@@ -26,6 +27,7 @@ export const routes: Routes = [
     {path: 'dietitian', component: DietitianComponent},
     {path: 'add-dietitian', component: AddDietitianComponent},
     {path: 'package', component: PackageComponent},
+    {path: 'add-package', component: AddPackageComponent},
     {path: 'group', component: GroupComponent},
     {path: 'customersignup', component: CustomerSignupComponent},
     {path: 'recipetype', component: RecipetypeComponent},
