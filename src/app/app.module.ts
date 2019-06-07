@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import {CommonModule } from '@angular/common';
+
+// import { Ng2SmartTableModule } from 'ng2-smart-table';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { FormsModule } from '@angular/forms';
@@ -58,6 +61,8 @@ import {CustomerService} from './customer-list/customer.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    // Ng2SmartTableModule,
+    CommonModule,
     FormsModule,
     ReactiveFormsModule,
     RouterModule,

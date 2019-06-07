@@ -53,7 +53,15 @@
           </tr>
           </thead>
           <tbody>
-
+            <tr *ngFor = "let c of customer">
+              <td>{{ c.customer_code }}</td>
+              <td>{{ c.customer_name }}</td>
+              <td>{{ c.customer_email }}</td>
+              <td>{{ c.customer_contactno }}</td>
+              <td>{{ c.gender }}</td>
+              <td></td>
+              <td></td>
+            </tr>
           </tbody>
           
         </table>
