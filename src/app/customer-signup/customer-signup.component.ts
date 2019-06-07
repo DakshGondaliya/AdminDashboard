@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Feedback, Gender, Activity, Dietryhabits } from '../feedback';
+import { Feedback, Gender, Activity, Dietaryhabits } from '../feedback';
+import { SignupServiceService } from './signup-service.service';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-customer-signup',
@@ -13,11 +15,13 @@ export class CustomerSignupComponent implements OnInit {
   feedback: Feedback;
   genderType = Gender;
   activityType = Activity;
-  dietryHabits = Dietryhabits;
+  dietaryHabits = Dietaryhabits;
+
+  posts: Feedback[];
+  blogpost = new Feedback();
 
 
-
-  constructor( private fb: FormBuilder) {
+  constructor( private fb: FormBuilder,private signupService: SignupServiceService) {
     this.createForm();
    }
 
@@ -33,10 +37,10 @@ export class CustomerSignupComponent implements OnInit {
       city: '',
       birth_date: '',
       gender: '',
-      height: '',
+      height: '', 
       weight: '',
       activity: '',
-      dietry_habits: ''
+      dietary_habits: ''
     });
   }
 
@@ -44,6 +48,10 @@ export class CustomerSignupComponent implements OnInit {
     this.feedback = this.feedbackForm.value;
     console.log(this.feedback);
     this.feedbackForm.reset();
+    this.signupService.createPost(this.feedback).subscribe(
+      data => this.posts.push(data)
+    );
+    
   }
 
 }

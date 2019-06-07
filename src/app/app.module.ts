@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AppheaderComponent } from './components/appheader/appheader.component';
@@ -26,6 +27,9 @@ import { PlanListComponent } from './plan-list/plan-list.component';
 import { AddDietitianComponent } from './add-dietitian/add-dietitian.component';
 import { AddUomComponent } from './add-uom/add-uom.component';
 import { RecipeUnitComponent } from './recipe-unit/recipe-unit.component';
+
+import {SignupServiceService} from './customer-signup/signup-service.service';
+import {CustomerService} from './customer-list/customer.service';
 
 @NgModule({
   declarations: [
@@ -56,9 +60,13 @@ import { RecipeUnitComponent } from './recipe-unit/recipe-unit.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    SignupServiceService,
+    CustomerService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
