@@ -31,8 +31,8 @@
             <label for="Plan">Plan</label>
             <select id="inputState" class="form-control" formControlName="plan_name">
               <option selected></option>
-              <option *ngFor="let gtype of genderType" [value]="gtype">
-                {{ gtype }}
+              <option *ngFor="let ptype of packages" [value]="ptype">
+                {{ ptype.plan_name }}
               </option>
             </select>
           </div>
@@ -40,8 +40,8 @@
             <label for="Gender">Dietitian</label>
             <select id="inputState" class="form-control" formControlName="dietician_name">
               <option selected></option>
-              <option *ngFor="let gtype of genderType" [value]="gtype">
-                {{ gtype }}
+              <option *ngFor="let dtype of packages" [value]="dtype">
+                {{ dtype.dietician_name }}
               </option>
             </select>
           </div>

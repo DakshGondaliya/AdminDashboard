@@ -34,6 +34,7 @@ import { RecipeUnitComponent } from './recipe-unit/recipe-unit.component';
 import {SignupServiceService} from './customer-signup/signup-service.service';
 import {CustomerService} from './customer-list/customer.service';
 import { AddPackageComponent } from './add-package/add-package.component';
+import { PackageService } from './add-package/package.service';
 
 @NgModule({
   declarations: [
@@ -72,7 +73,8 @@ import { AddPackageComponent } from './add-package/add-package.component';
   ],
   providers: [
     SignupServiceService,
-    CustomerService
+    CustomerService,
+    PackageService
   ],
   bootstrap: [AppComponent]
 })
