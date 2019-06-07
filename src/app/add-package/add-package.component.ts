@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Package } from './package';
+import { Package, Duration } from './package';
+import { Dietitian } from '../dietitian/dietitian';
+import { DietitianService } from '../dietitian/dietitian.service';
 import { PackageService } from './package.service';
 
 @Component({
@@ -13,15 +15,23 @@ export class AddPackageComponent implements OnInit {
   packageForm: FormGroup;
   package: Package;
 
-  packages: Package[];
+  durationType = Duration;
 
-  constructor(private fb: FormBuilder, private pService: PackageService) {
+  packages: Package[];
+  dietitians: Dietitian[];
+
+  constructor(private fb: FormBuilder, 
+    private pService: PackageService, 
+    private dService: DietitianService) {
     this.createForm()
   }
 
   ngOnInit() {
     this.pService.getData().subscribe((data: Package[]) => {
       this.packages = data;
+    });
+    this.dService.getData().subscribe((data: Dietitian[]) => {
+      this.dietitians = data;
     });
   }
 
@@ -30,8 +40,8 @@ export class AddPackageComponent implements OnInit {
         package_name: '',
         package_code: '',
         plan_name: '',
-        dietician_name: '',
-        duration: '',
+        dietitian_name: '',
+        duration: 'Select Duration',
         isGroupPackage: false, 
         description: '',
       

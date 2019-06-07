@@ -30,7 +30,7 @@
           <div class="form-group col-md-6">
             <label for="Plan">Plan</label>
             <select id="inputState" class="form-control" formControlName="plan_name">
-              <option selected></option>
+              
               <option *ngFor="let ptype of packages" [value]="ptype">
                 {{ ptype.plan_name }}
               </option>
@@ -38,10 +38,10 @@
           </div>
           <div class="form-group col-md-6">
             <label for="Gender">Dietitian</label>
-            <select id="inputState" class="form-control" formControlName="dietician_name">
-              <option selected></option>
-              <option *ngFor="let dtype of packages" [value]="dtype">
-                {{ dtype.dietician_name }}
+            <select id="inputState" class="form-control" formControlName="dietitian_name">
+        
+              <option *ngFor="let dtype of dietitians" [value]="dtype">
+                {{ dtype.dietitian_name }}
               </option>
             </select>
           </div>
@@ -50,8 +50,8 @@
           <div class="form-group col-md-6">
             <label for="Gender">Duration</label>
             <select id="inputState" class="form-control" formControlName="duration">
-              <option selected></option>
-              <option *ngFor="let gtype of genderType" [value]="gtype">
+              <option selected>Select Duration</option>
+              <option *ngFor="let gtype of durationType" [value]="gtype">
                 {{ gtype }}
               </option>
             </select>

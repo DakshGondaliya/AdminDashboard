@@ -17,7 +17,7 @@ export class PackageService {
   constructor( private http:HttpClient) { }
 
   getData() {
-    return this.http.get(this.url + 'package');
+    return this.http.get(this.url + 'plan');
   }
   
   createPost( packag: Package): Observable<any>{
