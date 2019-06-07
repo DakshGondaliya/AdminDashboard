@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DietitianService } from './dietitian.service';
+import { Dietitian } from './dietitian';
 
 @Component({
   selector: 'app-dietitian',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DietitianComponent implements OnInit {
 
-  constructor() { }
+  dietitian: Dietitian[];
+  
+  constructor(private dservice: DietitianService) {}
 
   ngOnInit() {
+    this.dservice.getData().subscribe((data: Dietitian[]) => {
+      this.dietitian = data;
+    });
   }
 
 }

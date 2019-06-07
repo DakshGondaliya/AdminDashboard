@@ -31,6 +31,14 @@
           </tr>
         </thead>
         <tbody>
+          <tr *ngFor = "let d of dietitian">
+            <td>{{ d.dietitian_name }}</td>
+            <td>{{ d.qualification }}</td>
+            <td>{{ d.dietitian_email }}</td>
+            <td>{{ d.dietitian_contactno }}</td>
+            <td></td>
+            <td></td>
+          </tr>
 
         </tbody>
       </table>
