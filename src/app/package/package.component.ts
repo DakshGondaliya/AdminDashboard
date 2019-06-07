@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PackagelistService } from './packagelist.service';
+import { Package } from '../add-package/package';
 
 @Component({
   selector: 'app-package',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PackageComponent implements OnInit {
 
-  constructor() { }
+  packages: Package[];
+
+  constructor(private pService: PackagelistService) { }
 
   ngOnInit() {
+    this.pService.getData().subscribe((data: Package[]) => {
+      this.packages = data;
+    });
   }
 
 }

@@ -35,6 +35,7 @@ import {SignupServiceService} from './customer-signup/signup-service.service';
 import {CustomerService} from './customer-list/customer.service';
 import { AddPackageComponent } from './add-package/add-package.component';
 import { PackageService } from './add-package/package.service';
+import { PackagelistService } from './package/packagelist.service';
 
 @NgModule({
   declarations: [
@@ -74,7 +75,8 @@ import { PackageService } from './add-package/package.service';
   providers: [
     SignupServiceService,
     CustomerService,
-    PackageService
+    PackageService,
+    PackagelistService
   ],
   bootstrap: [AppComponent]
 })

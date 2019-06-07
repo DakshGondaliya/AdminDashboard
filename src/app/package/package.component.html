@@ -32,6 +32,15 @@
           </tr>
         </thead>
         <tbody>
+          <tr *ngFor = " let p of packages">
+            <td>{{ p.package_name }}</td>
+            <td>{{ p.package_code }}</td>
+            <td>{{ p.duration }}</td>
+            <td>{{ p.plan_name }}</td>
+            <td>{{ p.dietitian_name }}</td>
+            <td></td>
+            <td></td>
+          </tr>
 
         </tbody>
       </table>
