@@ -22,8 +22,8 @@ export class PlanComponent implements OnInit {
 
   createForm() {
     this.planForm = this.pf.group({
-      name: '',
-      code: '',
+      plan_name: '',
+      plan_code: '',
       description: '',
       isCustomPlan: false,
       isDefault: false

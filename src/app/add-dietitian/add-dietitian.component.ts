@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Dietitian } from '../addDietitian';
+import { AddDService } from './add-d.service';
 
 @Component({
   selector: 'app-add-dietitian',
@@ -12,7 +13,9 @@ export class AddDietitianComponent implements OnInit {
   dietitianForm: FormGroup;
   dietitan: Dietitian;
 
-  constructor(private fb: FormBuilder) {
+  posts: Dietitian[];
+
+  constructor(private fb: FormBuilder, private dservice: AddDService) {
     this.createForm();
   }
 
@@ -30,8 +33,8 @@ export class AddDietitianComponent implements OnInit {
       description: '',
       address1: '',
       address2: '',
-      state: '',
       city: '',
+      state: '',
       pincode: '',
       dietitian_isactive: false
     });
@@ -41,6 +44,9 @@ export class AddDietitianComponent implements OnInit {
     this.dietitan = this.dietitianForm.value;
     console.log(this.dietitan);
     this.dietitianForm.reset();
+    this.dservice.createPost(this.dietitan).subscribe(
+      data => this.posts.push(data)
+    );
   }
 
 }
