@@ -17,7 +17,7 @@
       <button type="button" class="btn btn-secondary btn-1" routerLink='/plan'>Add Plan</button>
       <div class="search col-md-6">
         <label for="search">Search</label>
-        <input type="text" class="sinput">
+        <input type="text" [(ngModel)]="filtertext" class="form-control">
       </div>
       <table class="table table-striped ttable-bordered list">
         <thead>
@@ -32,7 +32,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor = "let p of plan">
+          <tr *ngFor = "let p of plan | filter: filtertext">
             <td>{{ p.plan_name }}</td>
             <td>{{ p.plan_code }}</td>
             <td>{{ p.description }}</td>

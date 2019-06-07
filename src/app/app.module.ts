@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import {CommonModule } from '@angular/common';
 
 // import { Ng2SmartTableModule } from 'ng2-smart-table';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { FormsModule } from '@angular/forms';
@@ -36,6 +37,7 @@ import {CustomerService} from './customer-list/customer.service';
 import { AddPackageComponent } from './add-package/add-package.component';
 import { PackageService } from './add-package/package.service';
 import { PackagelistService } from './package/packagelist.service';
+// import { MyfilterPipe } from './myfilter.pipe'; 
 
 @NgModule({
   declarations: [
@@ -60,12 +62,13 @@ import { PackagelistService } from './package/packagelist.service';
     AddUomComponent,
     RecipeUnitComponent,
     AddPackageComponent,
+    // MyfilterPipe
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    // Ng2SmartTableModule,
+    Ng2SearchPipeModule,
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
