@@ -19,7 +19,8 @@ import { IngredientComponent } from '../ingredient/ingredient.component';
 import { CustomerImportComponent } from '../customer-import/customer-import.component';
 import { CustomerListComponent } from '../customer-list/customer-list.component';
 import { AdminDietComponent } from '../admin-diet/admin-diet.component';
-import { RecipeUnitComponent } from '../recipe-unit/recipe-unit.component'
+import { RecipeUnitComponent } from '../recipe-unit/recipe-unit.component';
+import { DashboardComponent } from '../dashboard/dashboard.component';
 
 export const routes: Routes = [
     {path: 'plan-list', component: PlanListComponent },
@@ -39,5 +40,6 @@ export const routes: Routes = [
     {path: 'customerlist', component: CustomerListComponent},
     {path: 'admin-diet', component: AdminDietComponent},
     {path: 'recipe-unit', component: RecipeUnitComponent},
-    {path: '', redirectTo:'/plan', pathMatch: 'full'}
+    {path: 'dashboard', component: DashboardComponent},
+    {path: '', redirectTo:'/dashboard', pathMatch: 'full'}
 ];  

@@ -37,6 +37,7 @@ import {CustomerService} from './customer-list/customer.service';
 import { AddPackageComponent } from './add-package/add-package.component';
 import { PackageService } from './add-package/package.service';
 import { PackagelistService } from './package/packagelist.service';
+import { DashboardComponent } from './dashboard/dashboard.component';
 // import { MyfilterPipe } from './myfilter.pipe'; 
 
 @NgModule({
@@ -62,6 +63,7 @@ import { PackagelistService } from './package/packagelist.service';
     AddUomComponent,
     RecipeUnitComponent,
     AddPackageComponent,
+    DashboardComponent,
     // MyfilterPipe
     
   ],
