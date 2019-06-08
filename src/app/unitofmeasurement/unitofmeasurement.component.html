@@ -15,11 +15,11 @@
   <section class="content">
     <div class="box">
       <button type="button" class="btn btn-secondary btn-1" routerLink="/add-uom">Add UOM</button>
-      <div class="search col-md-6">
-        <label for="search">Search</label>
-        <input type="text" class="sinput">
-      </div>
-      <table class="table table-striped ttable-bordered list">
+      <div class="col-md-2 s-btn">
+          <label>Search:</label>
+          <input type="search" [(ngModel)]="filtertext" class="form-control input-sm" placeholder="">
+        </div>
+      <table class= "table table-bordered table-hover">
         <thead>
           <tr>
             <th scope="col">Name</th>
@@ -30,7 +30,13 @@
           </tr>
         </thead>
         <tbody>
-
+          <tr *ngFor = "let u of uom | filter: filtertext">
+            <td>{{ u.uom_name}}</td>
+            <td>{{ u.uom_value}}</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+          </tr>
         </tbody>
       </table>
     </div>

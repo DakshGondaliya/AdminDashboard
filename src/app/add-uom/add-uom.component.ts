@@ -13,7 +13,7 @@ export class AddUomComponent implements OnInit {
   uomForm: FormGroup;
   uom: Uom;
 
-  posts: Uom[];
+  posts: Uom[] = [];
 
   constructor( private fb: FormBuilder, private uomservice: UomService) {
     this.createForm();

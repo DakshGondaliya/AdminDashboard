@@ -1,5 +1,8 @@
 .btn-1 {
-    margin-left: 1.05em;
+    left: 0;
+    float: left;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 .form-group {
@@ -15,11 +18,20 @@
    padding: 1em 0;
 }
 
-.list{
-    margin-top: 3em;
-    margin-left: 1.05em;
+.s-btn{
+    display: inline-flex;
+    float: right;
+    
+    margin-top: -0.2em;
+    right: 0;
+    margin-right: 5em;
 }
 
-.search{
-    margin-left: 40em;
+.s-btn label{
+    margin-right: 1em;
+}
+
+.s-btn input{
+    height: 23px;
+    width:200px;
 }
