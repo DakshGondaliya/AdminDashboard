@@ -1,34 +1,38 @@
 <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <h1>
-        Unit of Measurement 
-        <small>Preview</small>
-      </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Plan</li>
-      </ol>
-    </section>
-  
-    <!-- Main content -->
-    <section class="content">
-      <div class="box">
-        <form novalidate [formGroup]="uomForm" (ngSubmit)="onSubmit()" class="form-group">
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="name">Name</label>
-              <input formControlName="name" type="text" class="form-control" id="name" placeholder="">
-            </div>
-            <div class="form-group col-md-6">
-              <label for="Code">Default Value</label>
-              <input formControlName="defaultvalue" type="text" class="form-control" id="code" placeholder="">
-            </div>
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <h1>
+      Unit of Measurement
+      <small>Preview</small>
+    </h1>
+    <ol class="breadcrumb">
+      <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+      <li class="active">Plan</li>
+    </ol>
+  </section>
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="box">
+      <form novalidate [formGroup]="uomForm" (ngSubmit)="onSubmit()" class="form-group">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="name">Name</label>
+            <input formControlName="uom_name" type="text" class="form-control" id="name" placeholder="">
           </div>
-          <button type="submit" class="btn btn-primary btn-1">Submit</button>
-          <button type="submit" class="btn btn-light btn-1">Cancel</button>
-        </form>
-      </div>
-    </section>
-  
-  </div>
+          <div class="form-group col-md-3">
+            <label for="Code">Default Value</label>
+            <input formControlName="uom_value" type="text" class="form-control" id="code" placeholder="">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="Code">Uom Code</label>
+            <input formControlName="uom_code" type="text" class="form-control" id="code" placeholder="">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-1">Submit</button>
+        <button type="submit" class="btn btn-light btn-1">Cancel</button>
+      </form>
+    </div>
+  </section>
+
+</div>

@@ -1,4 +1,5 @@
 export class Uom{
-    name: string;
-    defaultvalue: string;
+    uom_code: string;
+    uom_name: string;
+    uom_value: string;
 }

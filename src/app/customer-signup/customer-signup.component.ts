@@ -18,7 +18,7 @@ export class CustomerSignupComponent implements OnInit {
   dietaryHabits = Dietaryhabits;
 
   posts: Feedback[];
-  blogpost = new Feedback();
+  
 
 
   constructor( private fb: FormBuilder,private signupService: SignupServiceService) {
