@@ -39,6 +39,7 @@ import { PackageService } from './add-package/package.service';
 import { PackagelistService } from './package/packagelist.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UomService } from './add-uom/uom.service';
+import { AddRecipeComponent } from './add-recipe/add-recipe.component';
 // import { MyfilterPipe } from './myfilter.pipe'; 
 
 @NgModule({
@@ -65,6 +66,7 @@ import { UomService } from './add-uom/uom.service';
     RecipeUnitComponent,
     AddPackageComponent,
     DashboardComponent,
+    AddRecipeComponent,
     // MyfilterPipe
     
   ],
