@@ -14,19 +14,19 @@
   <!-- Main content -->
   <section class="content">
     <div class="box">
-      <form novalidate [formGroup]="uomForm" (ngSubmit)="onSubmit()" class="form-group">
+      <form novalidate [formGroup]="recipeForm" (ngSubmit)="onSubmit()" class="form-group">
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="name">Name</label>
-            <input formControlName="uom_name" type="text" class="form-control" id="name" placeholder="">
+            <input formControlName="recipetype_name" type="text" class="form-control" id="name" placeholder="">
           </div>
           
           <div class="form-group col-md-6">
-            <label for="Code">Uom Code</label>
-            <input formControlName="uom_code" type="text" class="form-control" id="code" placeholder="">
+            <label for="Code">Code</label>
+            <input formControlName="recipetype_code" type="text" class="form-control" id="code" placeholder="">
           </div>
         </div>
-        <button type="submit" class="btn btn-primary btn-1" routerLink="/uom">Submit</button>
+        <button type="submit" class="btn btn-primary btn-1" routerLink="/recipetype">Submit</button>
         <button type="submit" class="btn btn-light btn-1">Cancel</button>
       </form>
     </div>

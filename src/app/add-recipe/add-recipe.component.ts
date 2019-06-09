@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Recipe } from './recipe';
+import { RecipeService } from './recipe.service';
 
 @Component({
   selector: 'app-add-recipe',
@@ -14,7 +15,7 @@ export class AddRecipeComponent implements OnInit {
 
   posts: Recipe[] = [];
 
-  constructor(private fb: FormBuilder, recipeService: RecipeService) {
+  constructor(private fb: FormBuilder, private recipeService: RecipeService) {
     this.createForm();
   }
 
