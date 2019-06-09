@@ -41,6 +41,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { UomService } from './add-uom/uom.service';
 import { AddRecipeComponent } from './add-recipe/add-recipe.component';
 import { RecipeService } from './add-recipe/recipe.service';
+import { RecipetypeService } from './recipetype/recipetype.service';
 // import { MyfilterPipe } from './myfilter.pipe'; 
 
 @NgModule({
@@ -87,7 +88,8 @@ import { RecipeService } from './add-recipe/recipe.service';
     PackageService,
     PackagelistService,
     UomService,
-    RecipeService
+    RecipeService,
+    RecipetypeService
   ],
   bootstrap: [AppComponent]
 })

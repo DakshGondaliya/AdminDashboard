@@ -26,7 +26,7 @@ export class AddUomComponent implements OnInit {
     this.uomForm = this.fb.group({
       uom_code: '',
       uom_name: '',
-      uom_value: '',
+      uom_value: ''
     });
   }
 

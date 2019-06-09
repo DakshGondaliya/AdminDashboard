@@ -29,7 +29,7 @@ export class AddRecipeComponent implements OnInit {
     });
   }
 
-  omSubmit() {
+  onSubmit() {
     this.recipe = this.recipeForm.value;
     console.log(this.recipe);
     this.recipeForm.reset();

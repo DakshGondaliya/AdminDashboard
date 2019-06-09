@@ -23,7 +23,10 @@
           </tr>
         </thead>
         <tbody>
-          
+          <tr *ngFor = "let r of recipe">
+            <td>{{ r.recipetype_name}}</td>
+            <td>{{ r.recipetype_code}}</td>
+          </tr>
         </tbody>
       </table>
     </div>

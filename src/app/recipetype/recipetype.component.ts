@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RecipetypeService } from './recipetype.service';
+import { Recipe } from '../add-recipe/recipe';
 
 @Component({
   selector: 'app-recipetype',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecipetypeComponent implements OnInit {
 
-  constructor() { }
+  recipe: Recipe[];
+
+  constructor( private rService: RecipetypeService) { }
 
   ngOnInit() {
+    this.rService.getData().subscribe(
+      (data:Recipe[]) => {
+        this.recipe = data;
+      }
+    )
   }
 
 }
