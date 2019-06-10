@@ -1,4 +1,4 @@
-export class Dietitian {
+ export class Dietitian {
     dietitian_code : string;
     dietitian_name : string;
     qualification : string;

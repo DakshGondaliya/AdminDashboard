@@ -22,6 +22,7 @@ import { CustomerListComponent } from '../customer-list/customer-list.component'
 import { AdminDietComponent } from '../admin-diet/admin-diet.component';
 import { RecipeUnitComponent } from '../recipe-unit/recipe-unit.component';
 import { DashboardComponent } from '../dashboard/dashboard.component';
+import { RecipeFormComponent } from '../recipe-form/recipe-form.component';
 
 export const routes: Routes = [
     {path: 'plan-list', component: PlanListComponent },
@@ -37,6 +38,7 @@ export const routes: Routes = [
     {path: 'uom', component: UnitofmeasurementComponent},
     {path: 'add-uom', component: AddUomComponent},
     {path: 'recipe', component: RecipeComponent},
+    {path: 'recipe-form', component: RecipeFormComponent},
     {path: 'ingredient', component: IngredientComponent},
     {path: 'customerimport' , component: CustomerImportComponent},
     {path: 'customerlist', component: CustomerListComponent},

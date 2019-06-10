@@ -42,6 +42,7 @@ import { UomService } from './add-uom/uom.service';
 import { AddRecipeComponent } from './add-recipe/add-recipe.component';
 import { RecipeService } from './add-recipe/recipe.service';
 import { RecipetypeService } from './recipetype/recipetype.service';
+import { RecipeFormComponent } from './recipe-form/recipe-form.component';
 // import { MyfilterPipe } from './myfilter.pipe'; 
 
 @NgModule({
@@ -69,6 +70,7 @@ import { RecipetypeService } from './recipetype/recipetype.service';
     AddPackageComponent,
     DashboardComponent,
     AddRecipeComponent,
+    RecipeFormComponent,
     // MyfilterPipe
     
   ],
