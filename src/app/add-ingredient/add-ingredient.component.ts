@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Ingredient } from './ingredient';
+import { AddingredientService } from './addingredient.service';
 
 @Component({
   selector: 'app-add-ingredient',
@@ -12,7 +13,9 @@ export class AddIngredientComponent implements OnInit {
   ingredientForm: FormGroup;
   ingredient: Ingredient;
 
-  constructor(private fb: FormBuilder) {
+  posts: Ingredient[];
+
+  constructor(private fb: FormBuilder, private iService: AddingredientService) {
     this.createForm();
   }
 
@@ -62,9 +65,9 @@ export class AddIngredientComponent implements OnInit {
     this.ingredient = this.ingredientForm.value;
     console.log(this.ingredient);
     this.ingredientForm.reset();
-    // this.dservice.createPost(this.ingredient).subscribe(
-    //   data => this.posts.push(data)
-    // );
+    this.iService.createPost(this.ingredient).subscribe(
+      data => this.posts.push(data)
+    );
   }
 
 }
