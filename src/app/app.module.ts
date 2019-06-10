@@ -43,6 +43,7 @@ import { AddRecipeComponent } from './add-recipe/add-recipe.component';
 import { RecipeService } from './add-recipe/recipe.service';
 import { RecipetypeService } from './recipetype/recipetype.service';
 import { RecipeFormComponent } from './recipe-form/recipe-form.component';
+import { CustomerPackageComponent } from './customer-package/customer-package.component';
 // import { MyfilterPipe } from './myfilter.pipe'; 
 
 @NgModule({
@@ -71,6 +72,7 @@ import { RecipeFormComponent } from './recipe-form/recipe-form.component';
     DashboardComponent,
     AddRecipeComponent,
     RecipeFormComponent,
+    CustomerPackageComponent,
     // MyfilterPipe
     
   ],
