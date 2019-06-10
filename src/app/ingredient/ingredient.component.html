@@ -31,12 +31,12 @@
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor = "let u of uom | filter: filtertext">
-              <td>{{ u.uom_name}}</td>
-              <td>{{ u.uom_value}}</td>
-              <td>0</td>
-              <td></td>
-              <td></td>
+            <tr *ngFor = "let i of ingredient | filter: filtertext">
+              <td>{{ i.type }}</td>
+              <td>{{ i.food_name }}</td>
+              <td>{{ i.guju_name }}</td>
+              <td>{{ i.quantity }}</td>
+              <td>{{ i.isActive }}</td>
             </tr>
           </tbody>
         </table>
