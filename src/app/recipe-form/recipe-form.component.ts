@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { List, Parent } from './list';
+import { FormService } from './form.service';
 
 @Component({
   selector: 'app-recipe-form',
@@ -13,8 +14,9 @@ export class RecipeFormComponent implements OnInit {
   recipe: List;
 
   parent = Parent;
+  posts: List[] = [];
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private fsrevic: FormService) {
     this.createForm();
   }
 
@@ -39,6 +41,9 @@ export class RecipeFormComponent implements OnInit {
     this.recipe = this.recipeForm.value;
     console.log(this.recipe);
     this.recipeForm.reset();
+    this.fsrevic.createPost(this.recipe).subscribe(
+      data => this.posts.push(data)
+    );
   }
 
 }
