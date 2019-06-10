@@ -22,39 +22,18 @@
             <th scope="col">Parent</th>
             <th scope="col">Name</th>
             <th scope="col">Variants</th>
-            <th scope="col">Ingridient Type</th>
             <th scope="col">Active</th>
             <th scope="col">Action</th>
           </tr>
         </thead>
         <tbody>
+          <tr *ngFor = "let r of recipes">
+            <td>{{r.recipe_code}}</td>
+            <td>{{r.parent_recipe}}</td>
+            <td>{{r.recipe_name}}</td>
+            <td>{{r.variants}}</td>
+            <td>{{r.variants}}</td>
           <tr>
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
-          </tr>
-          <tr>
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
-          </tr>
-          <tr>
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
-            <td>.</td>
-          </tr>
         </tbody>
       </table>
     </div>

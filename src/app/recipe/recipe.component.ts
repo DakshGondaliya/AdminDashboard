@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { RecipeService } from './recipe.service';
+import { List } from '../recipe-form/list';
+
 
 @Component({
   selector: 'app-recipe',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecipeComponent implements OnInit {
 
-  constructor() { }
+  recipes: List[];
+
+  constructor(private recipeservice: RecipeService) { }
 
   ngOnInit() {
+    this.recipeservice.getData().subscribe((data: List[]) => {
+      this.recipes = data;
+    });
   }
 
 }
