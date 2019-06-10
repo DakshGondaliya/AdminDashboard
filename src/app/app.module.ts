@@ -45,6 +45,7 @@ import { RecipetypeService } from './recipetype/recipetype.service';
 import { RecipeFormComponent } from './recipe-form/recipe-form.component';
 import { CustomerPackageComponent } from './customer-package/customer-package.component';
 import { FormService } from './recipe-form/form.service';
+import { AddIngredientComponent } from './add-ingredient/add-ingredient.component';
 // import { MyfilterPipe } from './myfilter.pipe'; 
 
 @NgModule({
@@ -74,6 +75,7 @@ import { FormService } from './recipe-form/form.service';
     AddRecipeComponent,
     RecipeFormComponent,
     CustomerPackageComponent,
+    AddIngredientComponent,
     // MyfilterPipe
     
   ],

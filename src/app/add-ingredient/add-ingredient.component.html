@@ -1,0 +1,169 @@
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <h1>
+      Ingredient
+      <small>Preview</small>
+    </h1>
+    <ol class="breadcrumb">
+      <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+      <li class="active">Ingredient</li>
+    </ol>
+  </section>
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="box">
+      <form novalidate [formGroup]="ingredientForm" (ngSubmit)="onSubmit()" class="form-group">
+        <div class="form-row">
+          <div class="form-group col-md-2">
+            <label for="name">Food Group</label>
+            <input formControlName="food_group" type="text" class="form-control" id="name" placeholder="">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="name">Food Code</label>
+            <input formControlName="food_code" type="text" class="form-control" id="name" placeholder="">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="name">Type</label>
+            <input formControlName="type" type="text" class="form-control" id="name" placeholder="">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="Code">Food Name</label>
+            <input formControlName="food_name" type="text" class="form-control" id="code" placeholder="">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="Code">Guju Name</label>
+            <input formControlName="guju_name" type="text" class="form-control" id="code" placeholder="">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-2">
+            <label for="name">Qty</label>
+            <input formControlName="quantity" type="text" class="form-control" id="name" placeholder="">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="name">1 Exchange</label>
+            <input formControlName="one_exchange" type="text" class="form-control" id="name" placeholder="">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="name">Energy KJ</label>
+            <input formControlName="energy_kj" type="text" class="form-control" id="name" placeholder="">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="Code">Energy KCAL</label>
+            <input formControlName="energy_kcal" type="text" class="form-control" id="code" placeholder="">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="Code">GI Value</label>
+            <input formControlName="gi_value" type="text" class="form-control" id="code" placeholder="">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="Code">GL Value </label>
+            <input formControlName="gl_value" type="text" class="form-control" id="code" placeholder="">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-2">
+            <label for="name">Carbohydrate</label>
+            <input formControlName="carbohydrate" type="text" class="form-control" id="name" placeholder="">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="name">Protein</label>
+            <input formControlName="protein" type="text" class="form-control" id="name" placeholder="">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="name">Total Fibre</label>
+            <input formControlName="total_fibre" type="text" class="form-control" id="name" placeholder="">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="Code">Solublf</label>
+            <input formControlName="solublf" type="text" class="form-control" id="code" placeholder="">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="Code">In Solublf</label>
+            <input formControlName="in_solublf" type="text" class="form-control" id="code" placeholder="">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="Code">In Visible-Total Fat</label>
+            <input formControlName="invisible_totalfat" type="text" class="form-control" id="code" placeholder="">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-2">
+            <label for="name">Visible Fat</label>
+            <input formControlName="visiblefat" type="text" class="form-control" id="name" placeholder="">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="name">Thiamine</label>
+            <input formControlName="thiamine" type="text" class="form-control" id="name" placeholder="">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="name">Riboflavin</label>
+            <input formControlName="riboflavin" type="text" class="form-control" id="name" placeholder="">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="Code">Niacin</label>
+            <input formControlName="niacin" type="text" class="form-control" id="code" placeholder="">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="Code">Biotin</label>
+            <input formControlName="biotin" type="text" class="form-control" id="code" placeholder="">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="Code">Folates</label>
+            <input formControlName="folates" type="text" class="form-control" id="code" placeholder="">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-2">
+            <label for="name">Ascorbic ACID</label>
+            <input formControlName="ascorbic_Acid" type="text" class="form-control" id="name" placeholder="">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="name">Vitamin D2/D3</label>
+            <input formControlName="vitamin_d2d3" type="text" class="form-control" id="name" placeholder="">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="name">Calcium</label>
+            <input formControlName="calcium" type="text" class="form-control" id="name" placeholder="">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="Code">Phosphorus</label>
+            <input formControlName="phosphorous" type="text" class="form-control" id="code" placeholder="">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="Code">Iron</label>
+            <input formControlName="iron" type="text" class="form-control" id="code" placeholder="">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="Code">Sodium</label>
+            <input formControlName="sodium" type="text" class="form-control" id="code" placeholder="">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-2">
+            <label for="name">Potassium</label>
+            <input formControlName="potassium" type="text" class="form-control" id="name" placeholder="">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="name">Zinc</label>
+            <input formControlName="zinc" type="text" class="form-control" id="name" placeholder="">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="name">Magnesium</label>
+            <input formControlName="magnesium" type="text" class="form-control" id="name" placeholder="">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="Code">SFA</label>
+            <input formControlName="sfa" type="text" class="form-control" id="code" placeholder="">
+          </div>
+          
+        </div>
+        <button type="submit" class="btn btn-primary btn-1" >Submit</button>
+        <button type="submit" class="btn btn-light btn-1">Cancel</button>
+      </form>
+    </div>
+  </section>
+
+</div>
