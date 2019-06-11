@@ -1,0 +1,45 @@
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <h1>
+      Customer Import
+      <small>List</small>
+    </h1>
+    <ol class="breadcrumb">
+      <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+      <li class="active">Customer Import</li>
+    </ol>
+  </section>
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="box">
+      <button type="button" class="btn btn-secondary btn-1" routerLink="/customerimport">Add Customer</button>
+      <div class="col-md-2 s-btn">
+          <label>Search:</label>
+          <input type="search" [(ngModel)]="filtertext" class="form-control input-sm" placeholder="">
+        </div>
+      <table class= "table table-bordered table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Value</th>
+            <th scope="col">Parent Name</th>
+            <th scope="col">Active</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor = "let u of uom | filter: filtertext">
+            <td>{{ u.uom_name}}</td>
+            <td>{{ u.uom_value}}</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</div>

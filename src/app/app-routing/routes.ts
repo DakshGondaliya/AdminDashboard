@@ -25,6 +25,7 @@ import { DashboardComponent } from '../dashboard/dashboard.component';
 import { RecipeFormComponent } from '../recipe-form/recipe-form.component';
 import { CustomerPackageComponent } from '../customer-package/customer-package.component';
 import { AddIngredientComponent } from '../add-ingredient/add-ingredient.component';
+import { CustomerimportlistComponent } from '../customerimportlist/customerimportlist.component';
 
 export const routes: Routes = [
     {path: 'plan-list', component: PlanListComponent },
@@ -44,6 +45,7 @@ export const routes: Routes = [
     {path: 'ingredient', component: IngredientComponent},
     {path: 'add-ingredient', component: AddIngredientComponent},
     {path: 'customerimport' , component: CustomerImportComponent},
+    {path: 'customer-import-list', component: CustomerimportlistComponent},
     {path: 'customerlist', component: CustomerListComponent},
     {path: 'customerpackage', component: CustomerPackageComponent},
     {path: 'admin-diet', component: AdminDietComponent},

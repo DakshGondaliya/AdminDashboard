@@ -32,7 +32,7 @@
             <select id="inputState" class="form-control" formControlName="plan_name">
               
               <option *ngFor="let ptype of packages" [value]="ptype.plan_name">
-                {{ ptype.plan_name }}
+                {{ ptype.plan_name }} - {{ ptype.plan_code}}
               </option>
             </select>
           </div>
