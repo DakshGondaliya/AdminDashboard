@@ -25,8 +25,8 @@
             <label for="selectpackage">Select Package</label>
             <select id="selectpackage" class="form-control" formControlName="package_name">
               <option selected></option>
-              <option *ngFor="let stype of selectPackage" [value]="stype">
-                {{ stype }}
+              <option *ngFor="let stype of packages" [value]="stype.package_name">
+                {{ stype.package_name }}
               </option>
             </select>
           </div>

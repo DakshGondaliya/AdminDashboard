@@ -49,6 +49,7 @@ import { AddIngredientComponent } from './add-ingredient/add-ingredient.componen
 import { AddingredientService } from './add-ingredient/addingredient.service';
 import { IngredientService } from './ingredient/ingredient.service';
 import { CustomerimportlistComponent } from './customerimportlist/customerimportlist.component';
+import { ImportService } from './customer-import/import.service';
 // import { MyfilterPipe } from './myfilter.pipe'; 
 
 @NgModule({
@@ -103,7 +104,8 @@ import { CustomerimportlistComponent } from './customerimportlist/customerimport
     RecipetypeService,
     FormService,
     AddingredientService,
-    IngredientService
+    IngredientService,
+    ImportService
   ],
   bootstrap: [AppComponent]
 })

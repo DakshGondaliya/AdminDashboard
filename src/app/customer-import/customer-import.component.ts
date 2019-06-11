@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { CustomerImport, Selectpackage, Gender, Selectgroup } from '../customerimport';
+import { Package } from '../add-package/package';
+import { ImportService } from './import.service';
+import { PackageService } from '../add-package/package.service';
 
 @Component({
   selector: 'app-customer-import',
@@ -15,11 +18,17 @@ export class CustomerImportComponent implements OnInit {
   selectGroup = Selectgroup;
   genderType = Gender;
 
-  constructor(private ci: FormBuilder) {
+  posts: CustomerImport[] = [];
+  packages: Package[];
+
+  constructor(private ci: FormBuilder, private imService: ImportService) {
     this.createImportForm();
   }
 
   ngOnInit() {
+    this.imService.getData().subscribe((data: Package[]) => {
+      this.packages = data;
+    });
   }
 
   createImportForm() {
@@ -38,6 +47,9 @@ export class CustomerImportComponent implements OnInit {
     this.cimport = this.importForm.value;
     console.log(this.cimport);
     this.importForm.reset();
+    this.imService.createPost(this.cimport).subscribe(
+      data => this.posts.push(data)
+    );
   }
 
 }

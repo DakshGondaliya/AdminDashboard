@@ -56,6 +56,4 @@ export class AddPackageComponent implements OnInit {
       data => this.packages.push(data)
     );
   }
-
-
 }
