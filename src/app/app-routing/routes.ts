@@ -26,6 +26,7 @@ import { RecipeFormComponent } from '../recipe-form/recipe-form.component';
 import { CustomerPackageComponent } from '../customer-package/customer-package.component';
 import { AddIngredientComponent } from '../add-ingredient/add-ingredient.component';
 import { CustomerimportlistComponent } from '../customerimportlist/customerimportlist.component';
+import { AdmindietEditComponent } from '../admindiet-edit/admindiet-edit.component';
 
 export const routes: Routes = [
     {path: 'plan-list', component: PlanListComponent },
@@ -51,5 +52,6 @@ export const routes: Routes = [
     {path: 'admin-diet', component: AdminDietComponent},
     {path: 'recipe-unit', component: RecipeUnitComponent},
     {path: 'dashboard', component: DashboardComponent},
+    {path: 'admindiet-edit', component: AdmindietEditComponent},
     {path: '', redirectTo:'/dashboard', pathMatch: 'full'}
 ];  

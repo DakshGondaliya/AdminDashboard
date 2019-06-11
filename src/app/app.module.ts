@@ -52,6 +52,7 @@ import { CustomerimportlistComponent } from './customerimportlist/customerimport
 import { ImportService } from './customer-import/import.service';
 import { CustomerimportlistService } from './customerimportlist/customerimportlist.service';
 import { RecipeunitService } from './recipe-unit/recipeunit.service';
+import { AdmindietEditComponent } from './admindiet-edit/admindiet-edit.component';
 // import { MyfilterPipe } from './myfilter.pipe'; 
 
 @NgModule({
@@ -83,6 +84,7 @@ import { RecipeunitService } from './recipe-unit/recipeunit.service';
     CustomerPackageComponent,
     AddIngredientComponent,
     CustomerimportlistComponent,
+    AdmindietEditComponent,
     // MyfilterPipe
     
   ],
