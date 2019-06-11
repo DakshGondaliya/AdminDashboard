@@ -33,7 +33,7 @@
         </thead>
         <tbody>
           <tr *ngFor = "let ci of cImport | filter: filtertext">
-            <td></td>
+            <td>{{ ci._id }}</td>
             <td>{{ ci.package_name }}</td>
             <td>{{ ci.group_name }}</td>
             <td>{{ ci.startDate}}</td>

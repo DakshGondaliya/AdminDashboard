@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RecipeunitService } from './recipeunit.service';
+import { Ingredient } from '../add-ingredient/ingredient';
 
 @Component({
   selector: 'app-recipe-unit',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecipeUnitComponent implements OnInit {
 
-  constructor() { }
+  constructor(private rService: RecipeunitService) { }
 
   ngOnInit() {
+    this.rService.getData().subscribe((data:Ingredient[])=> {
+      
+    });
   }
 
 }

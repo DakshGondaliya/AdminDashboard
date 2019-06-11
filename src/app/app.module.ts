@@ -51,6 +51,7 @@ import { IngredientService } from './ingredient/ingredient.service';
 import { CustomerimportlistComponent } from './customerimportlist/customerimportlist.component';
 import { ImportService } from './customer-import/import.service';
 import { CustomerimportlistService } from './customerimportlist/customerimportlist.service';
+import { RecipeunitService } from './recipe-unit/recipeunit.service';
 // import { MyfilterPipe } from './myfilter.pipe'; 
 
 @NgModule({
@@ -107,7 +108,8 @@ import { CustomerimportlistService } from './customerimportlist/customerimportli
     AddingredientService,
     IngredientService,
     ImportService,
-    CustomerimportlistService
+    CustomerimportlistService,
+    RecipeunitService
   ],
   bootstrap: [AppComponent]
 })
