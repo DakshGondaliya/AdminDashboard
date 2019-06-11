@@ -18,7 +18,7 @@
       
       <div class="col-md-2 s-btn">
         <label>Search:</label>
-        <input type="search" class="form-control input-sm" placeholder="">
+        <input type="search" [(ngModel)]="filtertext" class="form-control input-sm" placeholder="">
       </div>
       <table  class="table table-bordered table-hover">
           <thead>
@@ -31,7 +31,13 @@
           </tr>
           </thead>
           <tbody>
-
+            <tr *ngFor = "let a of customer | filter:filtertext">
+              <td>{{ a.customer_name }}</td>
+              <td>{{ a.customer_contactno }}</td>
+              <td>{{ a.gender }}</td>
+              <td>{{ a.isIndividual }}</td>
+              <td></td>
+            </tr>
           </tbody>
           
         </table>

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { AdminlistService } from './adminlist.service';
+import { CustomerImport } from '../customerimport';
+
 
 @Component({
   selector: 'app-admin-diet',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminDietComponent implements OnInit {
 
-  constructor() { }
+  customer: CustomerImport[];
+
+  constructor( private aService:AdminlistService) { }
 
   ngOnInit() {
+    this.aService.getData().subscribe((data: CustomerImport[]) => {
+      this.customer = data;
+    });
   }
 
 }
