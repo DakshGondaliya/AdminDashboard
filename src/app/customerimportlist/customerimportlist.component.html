@@ -22,18 +22,22 @@
       <table class= "table table-bordered table-hover">
         <thead>
           <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Value</th>
-            <th scope="col">Parent Name</th>
+            <th scope="col">BatchNo</th>
+            <th scope="col">Package Name</th>
+            <th scope="col">Group Name</th>
+            <th scope="col">CreatedOn</th>
+            <th scope="col">Total Count</th>
             <th scope="col">Active</th>
             <th scope="col">Action</th>
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor = "let u of uom | filter: filtertext">
-            <td>{{ u.uom_name}}</td>
-            <td>{{ u.uom_value}}</td>
-            <td>0</td>
+          <tr *ngFor = "let ci of cImport | filter: filtertext">
+            <td></td>
+            <td>{{ ci.package_name }}</td>
+            <td>{{ ci.group_name }}</td>
+            <td>{{ ci.startDate}}</td>
+            <td></td>
             <td></td>
             <td></td>
           </tr>

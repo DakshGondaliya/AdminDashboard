@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { CustomerImport } from '../customerimport';
+import { CustomerimportlistService } from './customerimportlist.service';
+
 
 @Component({
   selector: 'app-customerimportlist',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerimportlistComponent implements OnInit {
 
-  constructor() { }
+  cImport: CustomerImport[];
+
+  constructor( private ciService: CustomerimportlistService) { }
 
   ngOnInit() {
+    this.ciService.getData().subscribe((data: CustomerImport[]) => {
+      this.cImport = data;
+    });
   }
 
 }
