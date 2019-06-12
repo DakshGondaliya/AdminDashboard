@@ -31,6 +31,7 @@ import { AdmindietEditComponent } from '../admindiet-edit/admindiet-edit.compone
 export const routes: Routes = [
     {path: 'plan-list', component: PlanListComponent },
     {path: 'plan', component: PlanComponent},
+    {path: 'plan/:id', component: PlanComponent},
     {path: 'dietitian', component: DietitianComponent},
     {path: 'add-dietitian', component: AddDietitianComponent},
     {path: 'package', component: PackageComponent},

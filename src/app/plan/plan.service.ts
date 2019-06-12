@@ -21,4 +21,12 @@ export class PlanService {
     return this.http.post(this.serverUrl + 'plan', plan, this.httpOptions);
      
   }
+  
+  getData(id: string) {
+    return this.http.get<Plan>(this.serverUrl + 'plan');
+  }
+
+  updatePost( plan: Plan, id){
+    return this.http.put<Plan>(this.serverUrl + 'plan/' + id, plan,this.httpOptions);
+  } 
 }
