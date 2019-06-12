@@ -23,7 +23,7 @@ export class PlanService {
   }
   
   getData(id: string) {
-    return this.http.get<Plan>(this.serverUrl + 'plan');
+    return this.http.get<Plan>(this.serverUrl + 'plan/' + id);
   }
 
   updatePost( plan: Plan, id){
